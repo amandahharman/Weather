@@ -20,15 +20,11 @@ class ViewController: UIViewController {
     var gainesville: Location = Location(cityName: "Gainesville", address: "606 SW 4th Ave", latitude: "29.648591", longitude: "-82.331251")
     var boston: Location = Location(cityName: "Boston", address: "51 Sawyer Rd #410", latitude: "42.361311", longitude: "-71.258547")
     
-
     
     var mobiquityOffices: [Location] = []
     var selectedCity: Location? = nil
     let weatherAPIKey = KeysManager.sharedInstance.WeatherAPIKey
 
-    var resultArray = [[String:AnyObject]]()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -46,18 +42,18 @@ class ViewController: UIViewController {
         }
 
         getWeather()
-        
 
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     @IBAction func changeLocationButtonPressed(sender: UIButton) {
         picker.hidden = false
-        
     }
     
     func getWeather(){
