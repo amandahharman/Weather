@@ -14,6 +14,7 @@
 		E017FACA1D08686600E81F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E017FAC91D08686600E81F7D /* Assets.xcassets */; };
 		E017FACD1D08686600E81F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E017FACB1D08686600E81F7D /* LaunchScreen.storyboard */; };
 		E017FAD51D0868D900E81F7D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017FAD41D0868D900E81F7D /* Location.swift */; };
+		E0ADD49F1D088A130014970A /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0ADD49E1D088A130014970A /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E017FACC1D08686600E81F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E017FACE1D08686600E81F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E017FAD41D0868D900E81F7D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E0ADD49E1D088A130014970A /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				E017FAC21D08686600E81F7D /* AppDelegate.swift */,
 				E017FACE1D08686600E81F7D /* Info.plist */,
 				E017FAC91D08686600E81F7D /* Assets.xcassets */,
+				E0ADD49E1D088A130014970A /* Keys.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0ADD49F1D088A130014970A /* Keys.plist in Resources */,
 				E017FACD1D08686600E81F7D /* LaunchScreen.storyboard in Resources */,
 				E017FACA1D08686600E81F7D /* Assets.xcassets in Resources */,
 				E017FAC81D08686600E81F7D /* Main.storyboard in Resources */,
