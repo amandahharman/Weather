@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     
     var mobiquityOffices: [Location] = []
     var selectedCity: Location? = nil
-    let weatherAPIKey = "6bc384b0174c6c1b319a14a40a3dc832"
+    let weatherAPIKey = KeysManager.sharedInstance.WeatherAPIKey
+
     var resultArray = [[String:AnyObject]]()
     
     
