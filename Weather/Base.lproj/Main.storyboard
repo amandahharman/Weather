@@ -36,11 +36,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Yv-MS-4rg">
+                                <rect key="frame" x="0.0" y="266" width="320" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.7114516581" green="0.91157281489999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="cityNameLabel" destination="fzv-qr-Upx" id="4dI-GL-JRq"/>
+                        <outlet property="picker" destination="7Yv-MS-4rg" id="96o-Ah-FuT"/>
                         <outlet property="tempLabel" destination="bmt-Uo-4RC" id="xLD-WD-qyp"/>
                     </connections>
                 </viewController>
