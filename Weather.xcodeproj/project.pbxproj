@@ -16,6 +16,7 @@
 		E017FAD51D0868D900E81F7D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017FAD41D0868D900E81F7D /* Location.swift */; };
 		E0ADD49F1D088A130014970A /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0ADD49E1D088A130014970A /* Keys.plist */; };
 		E0ADD4A11D08946C0014970A /* KeysManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ADD4A01D08946C0014970A /* KeysManager.swift */; };
+		EB84E4FF1D08D3860039F091 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB84E4FE1D08D3860039F091 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E017FAD41D0868D900E81F7D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		E0ADD49E1D088A130014970A /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		E0ADD4A01D08946C0014970A /* KeysManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysManager.swift; sourceTree = "<group>"; };
+		EB84E4FE1D08D3860039F091 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E017FAD41D0868D900E81F7D /* Location.swift */,
+				EB84E4FE1D08D3860039F091 /* Weather.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				E017FAD51D0868D900E81F7D /* Location.swift in Sources */,
 				E017FAC31D08686600E81F7D /* AppDelegate.swift in Sources */,
 				E0ADD4A11D08946C0014970A /* KeysManager.swift in Sources */,
+				EB84E4FF1D08D3860039F091 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
