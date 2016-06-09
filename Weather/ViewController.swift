@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var picker: UIPickerView!
+    @IBOutlet weak var weatherIconImageView: UIImageView!
     
     var gainesville: Location = Location(cityName: "Gainesville", address: "606 SW 4th Ave", latitude: "29.648591", longitude: "-82.331251")
     var boston: Location = Location(cityName: "Boston", address: "51 Sawyer Rd #410", latitude: "42.361311", longitude: "-71.258547")
@@ -56,7 +57,7 @@ class ViewController: UIViewController {
         picker.hidden = false
     }
     
-    func getWeather(){
+    func getWeather() {
         Alamofire.request(.GET, "https://api.forecast.io/forecast/\(weatherAPIKey)/\(selectedCity!.latitude),\(selectedCity!.longitude)")
             .responseJSON {response in
                 guard response.result.error == nil else {
@@ -68,11 +69,14 @@ class ViewController: UIViewController {
                 if let value = response.result.value {
                     print(value["currently"]!!["temperature"])
                     let temp = value["currently"]!!["temperature"] as! Int
-                    self.tempLabel.text = "\(temp)°F"
+                    let icon = value["currently"]!!["icon"] as! String
+                    let currentWeather = Weather(temp: temp, icon: icon)
+                    self.tempLabel.text = "\(currentWeather.temp)°F"
+                    self.weatherIconImageView.image = UIImage(named: "\(currentWeather.icon).png")!
+                  
                 }
         }
-    }
-    
+    }  
 }
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{

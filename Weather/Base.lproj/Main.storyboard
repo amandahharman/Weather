@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmt-Uo-4RC">
-                                <rect key="frame" x="277" y="168" width="87" height="21"/>
+                                <rect key="frame" x="222" y="168" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,6 +39,9 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Yv-MS-4rg">
                                 <rect key="frame" x="0.0" y="266" width="320" height="216"/>
                             </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-Ec-1EH">
+                                <rect key="frame" x="269" y="151" width="63" height="56"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.7114516581" green="0.91157281489999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -46,6 +49,7 @@
                         <outlet property="cityNameLabel" destination="fzv-qr-Upx" id="4dI-GL-JRq"/>
                         <outlet property="picker" destination="7Yv-MS-4rg" id="96o-Ah-FuT"/>
                         <outlet property="tempLabel" destination="bmt-Uo-4RC" id="xLD-WD-qyp"/>
+                        <outlet property="weatherIconImageView" destination="Jgg-Ec-1EH" id="6f0-eh-pLz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
