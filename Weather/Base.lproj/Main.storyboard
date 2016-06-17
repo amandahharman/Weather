@@ -134,6 +134,10 @@
         <scene sceneID="XuN-G3-sH1">
             <objects>
                 <viewController id="4tw-nE-dca" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uyi-Bq-SWm"/>
+                        <viewControllerLayoutGuide type="bottom" id="AB3-s7-qKP"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ucl-zW-ZWV">
                         <rect key="frame" x="0.0" y="0.0" width="78" height="66"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,6 +152,10 @@
         <scene sceneID="vkm-0g-MNj">
             <objects>
                 <viewController id="X9A-U8-zyO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OOX-SV-wIF"/>
+                        <viewControllerLayoutGuide type="bottom" id="TXV-oT-sXP"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wfo-Vt-fiP">
                         <rect key="frame" x="0.0" y="0.0" width="78" height="66"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
