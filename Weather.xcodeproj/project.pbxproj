@@ -18,6 +18,7 @@
 		E0ADD4A11D08946C0014970A /* KeysManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ADD4A01D08946C0014970A /* KeysManager.swift */; };
 		EB84E4FF1D08D3860039F091 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB84E4FE1D08D3860039F091 /* Weather.swift */; };
 		EBAAC9641D10805000E1C356 /* SegementedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAC9631D10805000E1C356 /* SegementedControlViewController.swift */; };
+		EBCB80FE1D11900000E7F840 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB80FD1D11900000E7F840 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E0ADD4A01D08946C0014970A /* KeysManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysManager.swift; sourceTree = "<group>"; };
 		EB84E4FE1D08D3860039F091 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		EBAAC9631D10805000E1C356 /* SegementedControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementedControlViewController.swift; sourceTree = "<group>"; };
+		EBCB80FD1D11900000E7F840 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				EBAAC9631D10805000E1C356 /* SegementedControlViewController.swift */,
+				EBCB80FD1D11900000E7F840 /* NetworkManager.swift */,
 				E017FAC41D08686600E81F7D /* ViewController.swift */,
 				E0ADD4A01D08946C0014970A /* KeysManager.swift */,
 			);
@@ -262,6 +265,7 @@
 				E017FAC51D08686600E81F7D /* ViewController.swift in Sources */,
 				E017FAD51D0868D900E81F7D /* Location.swift in Sources */,
 				E017FAC31D08686600E81F7D /* AppDelegate.swift in Sources */,
+				EBCB80FE1D11900000E7F840 /* NetworkManager.swift in Sources */,
 				E0ADD4A11D08946C0014970A /* KeysManager.swift in Sources */,
 				EB84E4FF1D08D3860039F091 /* Weather.swift in Sources */,
 				EBAAC9641D10805000E1C356 /* SegementedControlViewController.swift in Sources */,
