@@ -14,6 +14,8 @@
 		E017FACA1D08686600E81F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E017FAC91D08686600E81F7D /* Assets.xcassets */; };
 		E017FACD1D08686600E81F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E017FACB1D08686600E81F7D /* LaunchScreen.storyboard */; };
 		E017FAD51D0868D900E81F7D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017FAD41D0868D900E81F7D /* Location.swift */; };
+		E018BC5D1D146FBE005E5829 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018BC5C1D146FBE005E5829 /* ContainerViewController.swift */; };
+		E018BC5F1D14708D005E5829 /* SwapSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018BC5E1D14708D005E5829 /* SwapSegue.swift */; };
 		E0ADD49F1D088A130014970A /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0ADD49E1D088A130014970A /* Keys.plist */; };
 		E0ADD4A11D08946C0014970A /* KeysManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ADD4A01D08946C0014970A /* KeysManager.swift */; };
 		EB84E4FF1D08D3860039F091 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB84E4FE1D08D3860039F091 /* Weather.swift */; };
@@ -33,6 +35,8 @@
 		E017FACC1D08686600E81F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E017FACE1D08686600E81F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E017FAD41D0868D900E81F7D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E018BC5C1D146FBE005E5829 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E018BC5E1D14708D005E5829 /* SwapSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapSegue.swift; sourceTree = "<group>"; };
 		E0ADD49E1D088A130014970A /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		E0ADD4A01D08946C0014970A /* KeysManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysManager.swift; sourceTree = "<group>"; };
 		EB84E4FE1D08D3860039F091 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 			children = (
 				EBAAC9631D10805000E1C356 /* SegementedControlViewController.swift */,
 				EBCB80FD1D11900000E7F840 /* NetworkManager.swift */,
+				E018BC5C1D146FBE005E5829 /* ContainerViewController.swift */,
+				E018BC5E1D14708D005E5829 /* SwapSegue.swift */,
 				E017FAC41D08686600E81F7D /* ViewController.swift */,
 				E0ADD4A01D08946C0014970A /* KeysManager.swift */,
 			);
@@ -264,11 +270,13 @@
 			files = (
 				E017FAC51D08686600E81F7D /* ViewController.swift in Sources */,
 				E017FAD51D0868D900E81F7D /* Location.swift in Sources */,
+				E018BC5D1D146FBE005E5829 /* ContainerViewController.swift in Sources */,
 				E017FAC31D08686600E81F7D /* AppDelegate.swift in Sources */,
 				EBCB80FE1D11900000E7F840 /* NetworkManager.swift in Sources */,
 				E0ADD4A11D08946C0014970A /* KeysManager.swift in Sources */,
 				EB84E4FF1D08D3860039F091 /* Weather.swift in Sources */,
 				EBAAC9641D10805000E1C356 /* SegementedControlViewController.swift in Sources */,
+				E018BC5F1D14708D005E5829 /* SwapSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
