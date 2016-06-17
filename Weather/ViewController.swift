@@ -21,42 +21,36 @@ class ViewController: UIViewController {
     var selectedCity: Location? = nil
     let weatherAPIKey = KeysManager.sharedInstance.WeatherAPIKey
     let locationURL = KeysManager.sharedInstance.mobLocation
-    //    var locationDataArray = [[String: AnyObject]]()
-    
-    override func viewWillAppear(animated: Bool) {
-        
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getLocations()
-        picker.dataSource = self
-        picker.delegate = self
         picker.hidden = true
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
     @IBAction func changeLocationButtonPressed(sender: UIButton) {
         picker.hidden = false
     }
     
     func getWeather() {
-        NetworkManager.sharedInstance.getData("https://api.forecast.io/forecast/\(weatherAPIKey)/\(selectedCity!.latitude),\(selectedCity!.longitude)"){result, error in
-            if let value = result {
-                let currentWeather = Weather(
-                    temp: value["currently"]!!["temperature"] as! Int,
-                    icon: value["currently"]!!["icon"] as! String)
-                self.tempLabel.text = "\(currentWeather.temp)°F"
-                self.weatherIconImageView.image = UIImage(named: "\(currentWeather.icon).png")!
-            }
-            else{
-                print("Error fetching location data")
+        if let cityToUse = selectedCity {
+            NetworkManager.sharedInstance.getData("https://api.forecast.io/forecast/\(weatherAPIKey)/\(cityToUse.latitude),\(cityToUse.longitude)"){result, error in
+                if let value = result {
+                    let currentWeather = Weather(
+                        temp: value["currently"]!!["temperature"] as! Int,
+                        icon: value["currently"]!!["icon"] as! String)
+                    self.tempLabel.text = "\(currentWeather.temp)°F"
+                    self.weatherIconImageView.image = UIImage(named: "\(currentWeather.icon).png")!
+                }
+                else{
+                    print("Error fetching location data")
+                    
+                }
             }
         }
     }
